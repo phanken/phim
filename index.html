@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="vi"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#080808"><meta name="description" content="Kenflix - xem và tìm kiếm phim"><title>Kenflix</title>
+<script>(function(){var path=location.pathname||'/',first=path.split('/').filter(Boolean)[0]||'';var project=location.hostname.endsWith('github.io')&&first&&first!=='index.html'&&first!=='404.html';var base=project?'/'+first+'/':'/';window.KENFLIX_BASE_PATH=project?'/'+first:'';document.write('<base href="'+base+'">')})();</script>
+<link rel="stylesheet" href="assets/app.css?v=1.1.3-static"></head><body>
+<header class="header" id="header"><div class="header-inner"><a class="logo" href="./" aria-label="Kenflix"><span>Ken</span>FLIX</a><button class="menu-btn" id="menuBtn" aria-label="Mở menu">☰</button>
+<nav class="nav" id="nav"><a href="./">Trang chủ</a><button class="nav-link dropdown-btn" data-menu="genreMenu">Thể Loại <span>▾</span></button><button class="nav-link dropdown-btn" data-menu="countryMenu">Quốc Gia <span>▾</span></button><button class="nav-link dropdown-btn" data-menu="listMenu">Danh Sách <span>▾</span></button></nav>
+<form class="search-box" id="searchForm"><input id="searchInput" type="search" placeholder="Tìm phim..." autocomplete="off"><button type="submit" aria-label="Tìm kiếm">⌕</button></form></div>
+<div class="dropdown-menu genre-menu" id="genreMenu"></div><div class="dropdown-menu country-menu" id="countryMenu"></div><div class="dropdown-menu list-menu" id="listMenu"></div></header>
+<main id="app"><div class="page-loading">Đang tải Kenflix...</div></main>
+<div class="modal" id="detailModal" aria-hidden="true"><div class="modal-card"><button class="modal-close" id="modalClose" aria-label="Đóng">×</button><div id="detailBody"></div></div></div><div class="toast" id="toast"></div>
+<script src="https://cdn.jsdelivr.net/npm/hls.js@1/dist/hls.min.js"></script><script src="assets/app.js?v=1.1.3-static"></script></body></html>
